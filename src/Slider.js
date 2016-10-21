@@ -36,9 +36,10 @@ export default class Slider extends React.Component {
 
     return(
 
-      	<div class="slider">
+      	<div class="slider ">
       		<div class="img-container">
       			<img src={this.state.current} class="main-img" />
+      			<p class="headline">i have nothing to say</p>
       		</div>
       		<img src="/img/slider-left.png" class="slider-arrow" onClick={this.prevImg.bind(this)} />
       		<img src="/img/slider-right.png" class="slider-arrow slider-right" onClick={this.nextImg.bind(this)} />
