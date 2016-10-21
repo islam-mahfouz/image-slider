@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Navbar from './Navbar.js';
+import Slider from './Slider.js';
 
 export default class Application extends React.Component {
   
@@ -14,9 +15,10 @@ constructor() {
 
  render(){
     return(
-
-      <h1>a7a<h1>
-
+	    <div>	
+	      <Navbar></Navbar>
+	      <Slider></Slider>
+	    </div>
       );
   }
 }

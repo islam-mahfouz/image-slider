@@ -1,36 +1,114 @@
-@charset UTF-8;
-
 /*------------------------------------------------------------------
 [Style Index]
 
-0. Custom Reset
+0. Custom Resets and utilities
 1. Main header
 2. Main menu
 3. Content styling
 4. Footer
 -------------------------------------------------------------------*/
-
-
 /*------------------------------------------------------------------
-[0. Custom Reset]
+[0. Custom Reset and utilities]
 
 Reseting styles for individual elements
 -------------------------------------------------------------------*/
 
 body {
-	font-size: 16px;
-	font-family: "Roboto", sans-serif;
-	margin: 0;
-	padding: 0;
-	
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 
 .wrapper {
-	max-width: 1366px;
-	margin: 0px auto;
-	position: relative;
-	width: 100%;
+  max-width: 1367px;
+  margin: 0px auto;
+  position: relative;
+  width: 100%;
 }
 
 
+.valign-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+
+.valign-wrapper .valign {
+  display: block;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+.clear {
+  clear: both;
+}
+
+
+.right {
+  float: right;
+}
+
+
+.left {
+  float: left;
+}
+
+
+.left-align {
+  text-align: left;
+}
+
+
+.right-align {
+  text-align: right;
+}
+
+
+.center {
+  text-align: center;
+}
+
+
+.hoverable {
+  transition: box-shadow .25s;
+  box-shadow: 0;
+  cursor: pointer;
+}
+
+
+.hoverable:hover {
+  transition: box-shadow .25s;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*------------------------------------------------------------------
+[1. Main header]
+
+
+-------------------------------------------------------------------*/
+
+.navbar {
+  width: 100%;
+  height: 13vh;
+  background-color: white;
+  position: relative;
+}
+
+.depth {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.logo{
+  position: absolute;
+  top: 25%;
+  padding-left: 3%;
+  max-width: 250px;
+  width: 95%;
+  
+}
