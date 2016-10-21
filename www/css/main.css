@@ -2,11 +2,13 @@
 [Style Index]
 
 0. Custom Resets and utilities
-1. Main header
-2. Main menu
+1. Navigation Bar
+2. Main Slider
 3. Content styling
 4. Footer
 -------------------------------------------------------------------*/
+
+
 /*------------------------------------------------------------------
 [0. Custom Reset and utilities]
 
@@ -87,15 +89,16 @@ a {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
 /*------------------------------------------------------------------
-[1. Main header]
+[1. Navigation Bar]
 
 
 -------------------------------------------------------------------*/
 
 .navbar {
   width: 100%;
-  height: 13vh;
+  height: 10vh;
   background-color: white;
   position: relative;
 }
@@ -106,9 +109,36 @@ a {
 
 .logo{
   position: absolute;
-  top: 25%;
+  top: 20%;
   padding-left: 3%;
   max-width: 250px;
   width: 95%;
   
+}
+
+/*------------------------------------------------------------------
+[2. Main Slider]
+
+
+-------------------------------------------------------------------*/
+
+.slider{
+  height: 90vh;
+  width: 100%;
+  position: relative;
+}
+
+.img-container .main-img{
+  width: 100%;
+  height: 90vh;
+}
+
+.slider-arrow{
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+}
+
+.slider-right{
+  right: 0;
 }
