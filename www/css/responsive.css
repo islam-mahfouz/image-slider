@@ -8,6 +8,7 @@
 	.search-bar{
 		width: 25% !important;
 		left: 37.5% !important;
+		padding-left: 0 !important;
 	}
 
 	.search-bar:focus, .search-bar:hover{
@@ -30,6 +31,7 @@
 	.search-bar{
 		width: 28% !important;
 		left: 36% !important;
+		padding-left: 0 !important;
 	}
 
 	.search-bar:focus, .search-bar:hover{
@@ -55,6 +57,7 @@
 	.search-bar{
 		width: 50% !important;
 		left: 25% !important;
+		padding-left: 0 !important;
 	}
 
 	.search-bar:focus, .search-bar:hover{
