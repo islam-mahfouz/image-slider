@@ -1,0 +1,288 @@
+/*------------------------------------------------------------------
+[Style Index]
+
+0. Custom Resets and utilities
+1. Navigation Bar
+2. Main Slider
+3. Card styling
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[0. Custom Reset and utilities]
+
+Reseting styles for individual elements
+-------------------------------------------------------------------*/
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1367px;
+  margin: 0px auto;
+  position: relative;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hide {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.depth {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+#map{
+  height: 100%;
+}
+
+
+/*------------------------------------------------------------------
+[1. Navigation Bar]
+
+
+-------------------------------------------------------------------*/
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+  position: relative;
+  .logo {
+    position: absolute;
+    top: 20%;
+    padding-left: 3%;
+    max-width: 250px;
+    width: 95%;
+  }
+}
+
+
+/*------------------------------------------------------------------
+[2. Main Slider]
+
+
+-------------------------------------------------------------------*/
+
+.slider {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  .img-container {
+    position: relative;
+    .main-img {
+      width: 100%;
+      height: 90vh;
+    }
+  }
+  .slider-arrow {
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 5px 0;
+    margin: 0 5px;
+    &:hover {
+      background: rgba(220, 220, 220, 0.8);
+    }
+  }
+  .slider-right {
+    right: 0;
+  }
+  .img-container .headline {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90vh;
+    color: white;
+    font-weight: 600;
+    font-size: 3em;
+    span {
+      letter-spacing: 2px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 2.3% 1.8%;
+      width: 100%;
+      border-radius: 15px;
+    }
+  }
+  .search-container {
+    position: relative;
+    width: 100%;
+    .search-button {
+      position: absolute;
+      text-decoration: none;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.65);
+      text-align: center;
+      letter-spacing: .5px;
+      cursor: pointer;
+      top: -80px;
+      width: 7%;
+      height: 40px;
+      padding: 0;
+      left: 61%;
+      &:hover {
+        background: rgba(0, 0, 0, 0.95);
+      }
+      &:disabled {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+    .alert-box {
+      font-size: 1.3em;
+      position: absolute;
+      top: -180px;
+      width: 50%;
+      height: 55px;
+      left: 25%;
+      padding-left: 65px;
+      border-radius: 20px;
+      line-height: 55px;
+      background-color: #ce1310;
+      opacity: 0.95;
+      white-space: nowrap;
+      color: white;
+      font-weight: 600;
+    }
+    .cancel {
+      position: absolute;
+      top: -180px;
+      left: 26.3%;
+      padding-top: 10px;
+      z-index: 2;
+    }
+    .search-bar {
+      position: absolute;
+      top: -90px;
+      width: 20%;
+      left: 40%;
+      height: 56px;
+      line-height: 56px;
+      font-size: 1.2em;
+      padding-left: 2%;
+      background: transparent;
+      background: rgba(255, 255, 255, 0.7);
+      background-clip: padding-box;
+      border: 2px solid #7E8386;
+      border-radius: 26px;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 40px rgba(255, 255, 255, 0.3);
+      color: #000;
+      font-weight: 600;
+      outline: none;
+      transition: all .25s linear;
+      &::-webkit-input-placeholder {
+        color: #7E8386;
+      }
+      &:focus {
+        left: 30%;
+        width: 40%;
+        border: none;
+        background: transparent;
+        background: rgba(255, 255, 255, 0.89);
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.7), inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 0 40px rgba(255, 255, 255, 0.5);
+      }
+      &:hover{
+        left: 30%;
+        width: 40%;
+        border: none;
+        background: transparent;
+        background: rgba(255, 255, 255, 0.89);
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.7), inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 0 40px rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+}
+
+
+/*------------------------------------------------------------------
+[3. Card Styling]
+
+
+-------------------------------------------------------------------*/
+
+.card-list {
+  .card {
+    height: 370px;
+    width: 280px;
+    border: 6px solid #f2f2f2;
+    margin: 10px 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    transition-property: all;
+    transition-duration: .5s;
+    display: inline-block;
+    &:hover {
+      box-shadow: 0 0 15px #e2e2e2;
+      cursor: pointer;
+    }
+    .card-img {
+      display: block;
+      height: 180px;
+      width: 100%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    }
+    .card-info {
+      height: 125px;
+      position: relative;
+      padding: 30px 10px 15px 10px;
+      .workplace-name {
+        color: #ff6766;
+        line-height: 20px;
+        font-size: 1.2em;
+        font-weight: 600;
+        display: inline;
+      }
+      .score {
+        font-size: 0.7em;
+        color: #fff;
+        width: 38px;
+        line-height: 17px;
+        background: #606060;
+        text-align: center;
+        border-radius: 4px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5%;
+        margin-top: 1%;
+      }
+      .location {
+        font-size: 0.85em;
+        line-height: 1.4em;
+        color: #afafaf;
+        padding-top: 10px;
+      }
+    }
+    .card-footer {
+      background-color: #eaeaea;
+      height: 55px;
+      width: 100%;
+      .price {
+        font-size: 1.4em;
+        color: #ff6766;
+        font-weight: 600;
+        padding: 20px 0 0 0;
+      }
+    }
+  }
+  display: none;
+  margin-top: 20px;
+}

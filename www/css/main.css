@@ -4,17 +4,14 @@
 0. Custom Resets and utilities
 1. Navigation Bar
 2. Main Slider
-3. Content styling
-4. Footer
+3. Card styling
 -------------------------------------------------------------------*/
-
-
 /*------------------------------------------------------------------
 [0. Custom Reset and utilities]
 
 Reseting styles for individual elements
 -------------------------------------------------------------------*/
-
+/* line 16, main.scss */
 body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
@@ -22,7 +19,7 @@ body {
   padding: 0;
 }
 
-
+/* line 23, main.scss */
 .wrapper {
   max-width: 1367px;
   margin: 0px auto;
@@ -30,90 +27,50 @@ body {
   width: 100%;
 }
 
-
-.valign-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-
-.valign-wrapper .valign {
-  display: block;
-}
-
-
+/* line 30, main.scss */
 a {
   text-decoration: none;
 }
 
-
-.clear {
-  clear: both;
+/* line 34, main.scss */
+.hide {
+  display: none;
 }
 
-
-.right {
-  float: right;
-}
-
-
-.left {
-  float: left;
-}
-
-
-.left-align {
-  text-align: left;
-}
-
-
-.right-align {
-  text-align: right;
-}
-
-
+/* line 38, main.scss */
 .center {
   text-align: center;
 }
 
-
-.hoverable {
-  transition: box-shadow .25s;
-  box-shadow: 0;
-  cursor: pointer;
+/* line 42, main.scss */
+.depth {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
-
-.hoverable:hover {
-  transition: box-shadow .25s;
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/* line 46, main.scss */
+#map {
+  height: 100%;
 }
-
 
 /*------------------------------------------------------------------
 [1. Navigation Bar]
 
 
 -------------------------------------------------------------------*/
-
+/* line 57, main.scss */
 .navbar {
   width: 100%;
   height: 10vh;
   background-color: white;
   position: relative;
 }
-
-.depth {
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-}
-
-.logo{
+/* line 62, main.scss */
+.navbar .logo {
   position: absolute;
   top: 20%;
   padding-left: 3%;
   max-width: 250px;
   width: 95%;
-  
 }
 
 /*------------------------------------------------------------------
@@ -121,31 +78,41 @@ a {
 
 
 -------------------------------------------------------------------*/
-
-.slider{
+/* line 78, main.scss */
+.slider {
   height: 90vh;
   width: 100%;
   position: relative;
 }
-.img-container{
+/* line 82, main.scss */
+.slider .img-container {
   position: relative;
 }
-.img-container .main-img{
+/* line 84, main.scss */
+.slider .img-container .main-img {
   width: 100%;
   height: 90vh;
 }
-
-.slider-arrow{
+/* line 89, main.scss */
+.slider .slider-arrow {
   position: absolute;
   top: 45%;
   cursor: pointer;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  padding: 5px 0;
+  margin: 0 5px;
 }
-
-.slider-right{
+/* line 97, main.scss */
+.slider .slider-arrow:hover {
+  background: rgba(220, 220, 220, 0.8);
+}
+/* line 101, main.scss */
+.slider .slider-right {
   right: 0;
 }
-
-.headline{
+/* line 104, main.scss */
+.slider .img-container .headline {
   position: absolute;
   top: 0;
   right: 0;
@@ -156,4 +123,195 @@ a {
   text-align: center;
   vertical-align: middle;
   line-height: 90vh;
+  color: white;
+  font-weight: 600;
+  font-size: 3em;
+}
+/* line 118, main.scss */
+.slider .img-container .headline span {
+  letter-spacing: 2px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2.3% 1.8%;
+  width: 100%;
+  border-radius: 15px;
+}
+/* line 126, main.scss */
+.slider .search-container {
+  position: relative;
+  width: 100%;
+}
+/* line 129, main.scss */
+.slider .search-container .search-button {
+  position: absolute;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.65);
+  text-align: center;
+  letter-spacing: .5px;
+  cursor: pointer;
+  top: -80px;
+  width: 7%;
+  height: 40px;
+  padding: 0;
+  left: 61%;
+}
+/* line 142, main.scss */
+.slider .search-container .search-button:hover {
+  background: rgba(0, 0, 0, 0.95);
+}
+/* line 145, main.scss */
+.slider .search-container .search-button:disabled {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 149, main.scss */
+.slider .search-container .alert-box {
+  font-size: 1.3em;
+  position: absolute;
+  top: -180px;
+  width: 50%;
+  height: 55px;
+  left: 25%;
+  padding-left: 65px;
+  border-radius: 20px;
+  line-height: 55px;
+  background-color: #ce1310;
+  opacity: 0.95;
+  white-space: nowrap;
+  color: white;
+  font-weight: 600;
+}
+/* line 165, main.scss */
+.slider .search-container .cancel {
+  position: absolute;
+  top: -180px;
+  left: 26.3%;
+  padding-top: 10px;
+  z-index: 2;
+}
+/* line 172, main.scss */
+.slider .search-container .search-bar {
+  position: absolute;
+  top: -90px;
+  width: 20%;
+  left: 40%;
+  height: 56px;
+  line-height: 56px;
+  font-size: 1.2em;
+  padding-left: 2%;
+  background: transparent;
+  background: rgba(255, 255, 255, 0.7);
+  background-clip: padding-box;
+  border: 2px solid #7E8386;
+  border-radius: 26px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 40px rgba(255, 255, 255, 0.3);
+  color: #000;
+  font-weight: 600;
+  outline: none;
+  transition: all .25s linear;
+}
+/* line 191, main.scss */
+.slider .search-container .search-bar::-webkit-input-placeholder {
+  color: #7E8386;
+}
+/* line 194, main.scss */
+.slider .search-container .search-bar:focus {
+  left: 30%;
+  width: 40%;
+  border: none;
+  background: transparent;
+  background: rgba(255, 255, 255, 0.89);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.7), inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 0 40px rgba(255, 255, 255, 0.5);
+}
+/* line 202, main.scss */
+.slider .search-container .search-bar:hover {
+  left: 30%;
+  width: 40%;
+  border: none;
+  background: transparent;
+  background: rgba(255, 255, 255, 0.89);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.7), inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 0 40px rgba(255, 255, 255, 0.5);
+}
+
+/*------------------------------------------------------------------
+[3. Card Styling]
+
+
+-------------------------------------------------------------------*/
+/* line 221, main.scss */
+.card-list {
+  display: none;
+  margin-top: 20px;
+}
+/* line 222, main.scss */
+.card-list .card {
+  height: 370px;
+  width: 280px;
+  border: 6px solid #f2f2f2;
+  margin: 10px 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  transition-property: all;
+  transition-duration: .5s;
+  display: inline-block;
+}
+/* line 233, main.scss */
+.card-list .card:hover {
+  box-shadow: 0 0 15px #e2e2e2;
+  cursor: pointer;
+}
+/* line 237, main.scss */
+.card-list .card .card-img {
+  display: block;
+  height: 180px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+/* line 243, main.scss */
+.card-list .card .card-info {
+  height: 125px;
+  position: relative;
+  padding: 30px 10px 15px 10px;
+}
+/* line 247, main.scss */
+.card-list .card .card-info .workplace-name {
+  color: #ff6766;
+  line-height: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+  display: inline;
+}
+/* line 254, main.scss */
+.card-list .card .card-info .score {
+  font-size: 0.7em;
+  color: #fff;
+  width: 38px;
+  line-height: 17px;
+  background: #606060;
+  text-align: center;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+/* line 267, main.scss */
+.card-list .card .card-info .location {
+  font-size: 0.85em;
+  line-height: 1.4em;
+  color: #afafaf;
+  padding-top: 10px;
+}
+/* line 274, main.scss */
+.card-list .card .card-footer {
+  background-color: #eaeaea;
+  height: 55px;
+  width: 100%;
+}
+/* line 278, main.scss */
+.card-list .card .card-footer .price {
+  font-size: 1.4em;
+  color: #ff6766;
+  font-weight: 600;
+  padding: 20px 0 0 0;
 }
