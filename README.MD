@@ -9,7 +9,7 @@ Usage
  
 Start the development server with this command:
  
-```
+
 npm start
  
  
@@ -17,14 +17,13 @@ npm start
 Setup
 ---
  
-```
+
 npm install
-``` 
+ 
  
  
 Compile
 ---
  
-```
+
 npm run compile
-```
