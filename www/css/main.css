@@ -21,28 +21,27 @@ body {
 
 /* line 23, main.scss */
 .wrapper {
-  max-width: 1367px;
   margin: 0px auto;
   position: relative;
   width: 100%;
 }
 
-/* line 30, main.scss */
+/* line 29, main.scss */
 a {
   text-decoration: none;
 }
 
-/* line 34, main.scss */
+/* line 33, main.scss */
 .hide {
   display: none;
 }
 
-/* line 38, main.scss */
+/* line 37, main.scss */
 .center {
   text-align: center;
 }
 
-/* line 42, main.scss */
+/* line 41, main.scss */
 .depth {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
@@ -52,14 +51,14 @@ a {
 
 
 -------------------------------------------------------------------*/
-/* line 53, main.scss */
+/* line 52, main.scss */
 .navbar {
   width: 100%;
   height: 10vh;
   background-color: white;
   position: relative;
 }
-/* line 58, main.scss */
+/* line 57, main.scss */
 .navbar .logo {
   position: absolute;
   top: 20%;
@@ -73,22 +72,22 @@ a {
 
 
 -------------------------------------------------------------------*/
-/* line 74, main.scss */
+/* line 73, main.scss */
 .slider {
   height: 90vh;
   width: 100%;
   position: relative;
 }
-/* line 78, main.scss */
+/* line 77, main.scss */
 .slider .img-container {
   position: relative;
 }
-/* line 80, main.scss */
+/* line 79, main.scss */
 .slider .img-container .main-img {
   width: 100%;
   height: 90vh;
 }
-/* line 85, main.scss */
+/* line 84, main.scss */
 .slider .slider-arrow {
   position: absolute;
   top: 45%;
@@ -98,15 +97,15 @@ a {
   padding: 5px 0;
   margin: 0 5px;
 }
-/* line 93, main.scss */
+/* line 92, main.scss */
 .slider .slider-arrow:hover {
   background: rgba(220, 220, 220, 0.8);
 }
-/* line 97, main.scss */
+/* line 96, main.scss */
 .slider .slider-right {
   right: 0;
 }
-/* line 100, main.scss */
+/* line 99, main.scss */
 .slider .img-container .headline {
   position: absolute;
   top: 0;
@@ -122,7 +121,7 @@ a {
   font-weight: 600;
   font-size: 3em;
 }
-/* line 114, main.scss */
+/* line 113, main.scss */
 .slider .img-container .headline span {
   letter-spacing: 2px;
   background: rgba(0, 0, 0, 0.7);
@@ -130,12 +129,12 @@ a {
   width: 100%;
   border-radius: 15px;
 }
-/* line 122, main.scss */
+/* line 121, main.scss */
 .slider .search-container {
   position: relative;
   width: 100%;
 }
-/* line 125, main.scss */
+/* line 124, main.scss */
 .slider .search-container .search-button {
   position: absolute;
   text-decoration: none;
@@ -150,15 +149,15 @@ a {
   padding: 0;
   left: 61%;
 }
-/* line 138, main.scss */
+/* line 137, main.scss */
 .slider .search-container .search-button:hover {
   background: rgba(0, 0, 0, 0.95);
 }
-/* line 141, main.scss */
+/* line 140, main.scss */
 .slider .search-container .search-button:disabled {
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 145, main.scss */
+/* line 144, main.scss */
 .slider .search-container .alert-box {
   font-size: 1.3em;
   position: absolute;
@@ -175,7 +174,7 @@ a {
   color: white;
   font-weight: 600;
 }
-/* line 161, main.scss */
+/* line 160, main.scss */
 .slider .search-container .cancel {
   position: absolute;
   top: -180px;
@@ -183,7 +182,7 @@ a {
   padding-top: 10px;
   z-index: 2;
 }
-/* line 168, main.scss */
+/* line 167, main.scss */
 .slider .search-container .search-bar {
   position: absolute;
   top: -90px;
@@ -204,11 +203,11 @@ a {
   outline: none;
   transition: all .25s linear;
 }
-/* line 187, main.scss */
+/* line 186, main.scss */
 .slider .search-container .search-bar::-webkit-input-placeholder {
   color: #7E8386;
 }
-/* line 190, main.scss */
+/* line 189, main.scss */
 .slider .search-container .search-bar:focus {
   left: 30%;
   width: 40%;
@@ -217,7 +216,7 @@ a {
   background: rgba(255, 255, 255, 0.89);
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.7), inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 0 40px rgba(255, 255, 255, 0.5);
 }
-/* line 198, main.scss */
+/* line 197, main.scss */
 .slider .search-container .search-bar:hover {
   left: 30%;
   width: 40%;
@@ -232,12 +231,12 @@ a {
 
 
 -------------------------------------------------------------------*/
-/* line 217, main.scss */
+/* line 216, main.scss */
 .card-list {
   display: none;
   margin-top: 20px;
 }
-/* line 218, main.scss */
+/* line 217, main.scss */
 .card-list .card {
   height: 370px;
   width: 280px;
@@ -250,25 +249,25 @@ a {
   transition-duration: .5s;
   display: inline-block;
 }
-/* line 229, main.scss */
+/* line 228, main.scss */
 .card-list .card:hover {
   box-shadow: 0 0 15px #e2e2e2;
   cursor: pointer;
 }
-/* line 233, main.scss */
+/* line 232, main.scss */
 .card-list .card .card-img {
   display: block;
   height: 180px;
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
 }
-/* line 239, main.scss */
+/* line 238, main.scss */
 .card-list .card .card-info {
   height: 125px;
   position: relative;
   padding: 30px 10px 15px 10px;
 }
-/* line 243, main.scss */
+/* line 242, main.scss */
 .card-list .card .card-info .workplace-name {
   color: #ff6766;
   line-height: 20px;
@@ -276,7 +275,7 @@ a {
   font-weight: 600;
   display: inline;
 }
-/* line 250, main.scss */
+/* line 249, main.scss */
 .card-list .card .card-info .score {
   font-size: 0.7em;
   color: #fff;
@@ -290,20 +289,20 @@ a {
   margin-left: 5%;
   margin-top: 1%;
 }
-/* line 263, main.scss */
+/* line 262, main.scss */
 .card-list .card .card-info .location {
   font-size: 0.85em;
   line-height: 1.4em;
   color: #afafaf;
   padding-top: 10px;
 }
-/* line 270, main.scss */
+/* line 269, main.scss */
 .card-list .card .card-footer {
   background-color: #eaeaea;
   height: 55px;
   width: 100%;
 }
-/* line 274, main.scss */
+/* line 273, main.scss */
 .card-list .card .card-footer .price {
   font-size: 1.4em;
   color: #ff6766;
