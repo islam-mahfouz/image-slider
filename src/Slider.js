@@ -6,7 +6,7 @@ export default class Slider extends React.Component {
  constructor() {
   super()
   this.state = {
-    imgArray: [ "/img/20-workspace.jpg", "/img/01-workspace.jpg", "/img/artists-workspace.jpg"],
+    imgArray: [ "/img/01-workspace.jpg", "/img/20-workspace.jpg", "/img/artists-workspace.jpg"],
     imgNo: 0,
     imgArrayLength: 3,
     url: "https://www.deskbookers.com/nl-nl/sajax.json?q=Amsterdam&type=-&people=any&favorite=0&pid=&sw=52.293753%2C4.634942&ne=52.455562%2C5.162286&ids=17201%2C19640%2C13692%2C13691%2C12136%2C17938%2C15292%2C14886%2C14885%2C14884%2C14883%2C15730%2C15353%2C15351%2C15330%2C15080%2C17290%2C15454%2C15451%2C15379",
@@ -123,7 +123,7 @@ export default class Slider extends React.Component {
             <img src="/img/cancel.png" class="cancel hide"/>
             <span class="alert-box hide">No offices available in this city, please try another one!</span>
             <input onChange={ this.searchQuery.bind(this) } value={ this.state.search } type="text" name="search"  placeholder="City name..." class="search-bar" />
-            <button disabled={ !this.state.search } onClick={ this.showResult.bind(this) } class="search-button">Sit me!</button>
+            <button disabled={ !this.state.search } onClick={ this.showResult.bind(this) } class="search-button">Search</button>
           </div>
       	</div>
         <Card resultsArray={ this.state.resultsArray }></Card>
