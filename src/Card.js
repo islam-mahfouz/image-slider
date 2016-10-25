@@ -12,6 +12,7 @@ export default class Card extends React.Component {
           return(
               <li key={ index } class="card" >
                 <div class="card-header">
+                    <span class="hour-price"><span>{ item.hourPrice } &euro; /hour</span></span>
                     <img src={ item.image } class="card-img" />
                     <a href="javascript:" class="book-button">Book</a>
                   </div>

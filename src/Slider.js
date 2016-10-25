@@ -25,6 +25,7 @@ export default class Slider extends React.Component {
    componentDidMount(){
      this.serverRequest = $.get(this.state.url, function(result){
        var info =  result;
+       console.log(info);
        this.setState({
         resultObject:info
       })
@@ -75,7 +76,9 @@ export default class Slider extends React.Component {
       location: row.location_name,
       image: row.image_urls2[0],
       name:  row.name,
-      score: Math.round(row.location_rating * 10) / 10
+      score: Math.round(row.location_rating * 10) / 10,
+      hourPrice: row.hour_price,
+      reviewCount: row.review_count
     }))
     .filter(user => user.price != null &&
       user.image != null &&

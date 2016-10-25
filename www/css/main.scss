@@ -76,6 +76,28 @@ a {
   position: relative;
   .img-container {
     position: relative;
+    .headline {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 90vh;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 90vh;
+      color: white;
+      font-weight: 600;
+      font-size: 3em;
+      span {
+        letter-spacing: 2px;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 2.3% 1.8%;
+        width: 100%;
+        border-radius: 15px;
+      }
+    }
     .main-img {
       width: 100%;
       height: 90vh;
@@ -95,28 +117,6 @@ a {
   }
   .slider-right {
     right: 0;
-  }
-  .img-container .headline {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 90vh;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 90vh;
-    color: white;
-    font-weight: 600;
-    font-size: 3em;
-    span {
-      letter-spacing: 2px;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 2.3% 1.8%;
-      width: 100%;
-      border-radius: 15px;
-    }
   }
   .search-container {
     position: relative;
@@ -238,6 +238,22 @@ a {
         position: relative;
         height: 180px;
         width: 100%;
+          .hour-price{
+            font-size: 0.8em;
+            color: white;
+            top: 135px;
+            height: 20px;
+            position: absolute;
+            right: 5px;
+            font-weight: 600px;
+            top: 152px;
+            line-height: 20px;
+            span{
+              border-radius: 15px;
+              background: rgba(0, 0, 0, 0.5);
+              padding: 5px;
+            }
+          }
           .book-button{
             font-size: 1.2em;
             transition-property: all;
