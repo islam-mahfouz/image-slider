@@ -4,7 +4,7 @@
 0. Custom Resets and utilities
 1. Navigation Bar
 2. Main Slider
-3. Card styling
+3. Results section
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 [0. Custom Reset and utilities]
@@ -227,17 +227,19 @@ a {
 }
 
 /*------------------------------------------------------------------
-[3. Card Styling]
+[3. Results section]
 
 
 -------------------------------------------------------------------*/
 /* line 216, main.scss */
-.card-list {
+.results-container {
   display: none;
-  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
 }
-/* line 217, main.scss */
-.card-list .card {
+/* line 222, main.scss */
+.results-container .card-list .card {
   height: 370px;
   width: 280px;
   border: 6px solid #f2f2f2;
@@ -249,34 +251,60 @@ a {
   transition-duration: .5s;
   display: inline-block;
 }
-/* line 228, main.scss */
-.card-list .card:hover {
+/* line 233, main.scss */
+.results-container .card-list .card:hover {
   box-shadow: 0 0 15px #e2e2e2;
   cursor: pointer;
 }
-/* line 232, main.scss */
-.card-list .card .card-img {
+/* line 237, main.scss */
+.results-container .card-list .card .card-header {
+  position: relative;
+  height: 180px;
+  width: 100%;
+}
+/* line 241, main.scss */
+.results-container .card-list .card .card-header .book-button {
+  font-size: 1.2em;
+  transition-property: all;
+  transition-duration: .5s;
+  background-color: #ff6766;
+  color: white;
+  font-weight: 600;
+  line-height: 46px;
+  width: 90px;
+  border-radius: 10px;
+  position: absolute;
+  box-shadow: 0 2px 5px #cccccc;
+  top: 150px;
+  left: 85px;
+}
+/* line 255, main.scss */
+.results-container .card-list .card .card-header .book-button:hover {
+  background-color: #97ce68;
+}
+/* line 259, main.scss */
+.results-container .card-list .card .card-header .card-img {
   display: block;
   height: 180px;
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
 }
-/* line 238, main.scss */
-.card-list .card .card-info {
+/* line 266, main.scss */
+.results-container .card-list .card .card-info {
   height: 125px;
   position: relative;
-  padding: 30px 10px 15px 10px;
+  padding: 40px 10px 15px 10px;
 }
-/* line 242, main.scss */
-.card-list .card .card-info .workplace-name {
+/* line 270, main.scss */
+.results-container .card-list .card .card-info .workplace-name {
   color: #ff6766;
   line-height: 20px;
   font-size: 1.2em;
   font-weight: 600;
   display: inline;
 }
-/* line 249, main.scss */
-.card-list .card .card-info .score {
+/* line 277, main.scss */
+.results-container .card-list .card .card-info .score {
   font-size: 0.7em;
   color: #fff;
   width: 38px;
@@ -289,21 +317,21 @@ a {
   margin-left: 5%;
   margin-top: 1%;
 }
-/* line 262, main.scss */
-.card-list .card .card-info .location {
+/* line 290, main.scss */
+.results-container .card-list .card .card-info .location {
   font-size: 0.85em;
   line-height: 1.4em;
   color: #afafaf;
   padding-top: 10px;
 }
-/* line 269, main.scss */
-.card-list .card .card-footer {
+/* line 297, main.scss */
+.results-container .card-list .card .card-footer {
   background-color: #eaeaea;
   height: 55px;
   width: 100%;
 }
-/* line 273, main.scss */
-.card-list .card .card-footer .price {
+/* line 301, main.scss */
+.results-container .card-list .card .card-footer .price {
   font-size: 1.4em;
   color: #ff6766;
   font-weight: 600;

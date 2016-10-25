@@ -5,7 +5,7 @@ export default class Slider extends React.Component {
   
  constructor() {
   super()
-  this.state = {
+  this.state = {  
     imgArray: [ "/img/01-workspace.jpg", "/img/20-workspace.jpg", "/img/artists-workspace.jpg"],
     imgNo: 0,
     imgArrayLength: 3,
@@ -25,7 +25,6 @@ export default class Slider extends React.Component {
    componentDidMount(){
      this.serverRequest = $.get(this.state.url, function(result){
        var info =  result;
-       console.log(info);
        this.setState({
         resultObject:info
       })
@@ -93,14 +92,14 @@ export default class Slider extends React.Component {
     () => {
         // This is executed after the component updates
         if (resultsArray.length > 0) {
-          $(".card-list").show();
+          $(".results-container").show();
           $('html,body').animate({
             scrollTop: $(".card-list").offset().top
           }, 'slow');
         } else {
           $(".alert-box, .cancel").animate( { "opacity": "show"} , 1250 );
           $(".alert-box, .cancel").animate( { "opacity": "hide"} , 3750 );
-          $(".card-list").hide();
+          $(".results-container").hide();
         }
       }
       );
@@ -112,7 +111,7 @@ export default class Slider extends React.Component {
 
     return(
       <div>
-      	<div class="slider flow-text ">
+      	<div class="slider">
       		<div class="img-container">
       			<img src={ this.state.imgArray[ this.state.imgNo ] } class="main-img" />
       			<div class="headline"><span>{ this.state.headlines[ this.state.imgNo ] }</span></div>

@@ -4,7 +4,7 @@
 0. Custom Resets and utilities
 1. Navigation Bar
 2. Main Slider
-3. Card styling
+3. Results section
 -------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
@@ -208,76 +208,103 @@ a {
 
 
 /*------------------------------------------------------------------
-[3. Card Styling]
+[3. Results section]
 
 
 -------------------------------------------------------------------*/
 
-.card-list {
-  .card {
-    height: 370px;
-    width: 280px;
-    border: 6px solid #f2f2f2;
-    margin: 10px 10px;
-    border-radius: 10px;
-    background-color: #fff;
-    position: relative;
-    transition-property: all;
-    transition-duration: .5s;
-    display: inline-block;
-    &:hover {
-      box-shadow: 0 0 15px #e2e2e2;
-      cursor: pointer;
-    }
-    .card-img {
-      display: block;
-      height: 180px;
-      width: 100%;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
-    }
-    .card-info {
-      height: 125px;
+.results-container{
+  display: none;
+  position: relative;
+  width: 100%;
+  margin-top:30px;
+  .card-list {
+    .card {
+      height: 370px;
+      width: 280px;
+      border: 6px solid #f2f2f2;
+      margin: 10px 10px;
+      border-radius: 10px;
+      background-color: #fff;
       position: relative;
-      padding: 30px 10px 15px 10px;
-      .workplace-name {
-        color: #ff6766;
-        line-height: 20px;
-        font-size: 1.2em;
-        font-weight: 600;
-        display: inline;
+      transition-property: all;
+      transition-duration: .5s;
+      display: inline-block;
+      &:hover {
+        box-shadow: 0 0 15px #e2e2e2;
+        cursor: pointer;
       }
-      .score {
-        font-size: 0.7em;
-        color: #fff;
-        width: 38px;
-        line-height: 17px;
-        background: #606060;
-        text-align: center;
-        border-radius: 4px;
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 5%;
-        margin-top: 1%;
+      .card-header{
+        position: relative;
+        height: 180px;
+        width: 100%;
+          .book-button{
+            font-size: 1.2em;
+            transition-property: all;
+            transition-duration: .5s;
+            background-color: #ff6766;
+            color: white;
+            font-weight: 600;
+            line-height: 46px;
+            width: 90px;
+            border-radius: 10px;
+            position: absolute;
+            box-shadow: 0 2px 5px #cccccc;
+            top: 150px;
+            left: 85px;
+          &:hover{
+              background-color: #97ce68;
+            }
+          }
+          .card-img {
+            display: block;
+            height: 180px;
+            width: 100%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+          }
       }
-      .location {
-        font-size: 0.85em;
-        line-height: 1.4em;
-        color: #afafaf;
-        padding-top: 10px;
+      .card-info {
+        height: 125px;
+        position: relative;
+        padding: 40px 10px 15px 10px;
+        .workplace-name {
+          color: #ff6766;
+          line-height: 20px;
+          font-size: 1.2em;
+          font-weight: 600;
+          display: inline;
+        }
+        .score {
+          font-size: 0.7em;
+          color: #fff;
+          width: 38px;
+          line-height: 17px;
+          background: #606060;
+          text-align: center;
+          border-radius: 4px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 5%;
+          margin-top: 1%;
+        }
+        .location {
+          font-size: 0.85em;
+          line-height: 1.4em;
+          color: #afafaf;
+          padding-top: 10px;
+        }
       }
-    }
-    .card-footer {
-      background-color: #eaeaea;
-      height: 55px;
-      width: 100%;
-      .price {
-        font-size: 1.4em;
-        color: #ff6766;
-        font-weight: 600;
-        padding: 20px 0 0 0;
+      .card-footer {
+        background-color: #eaeaea;
+        height: 55px;
+        width: 100%;
+        .price {
+          font-size: 1.4em;
+          color: #ff6766;
+          font-weight: 600;
+          padding: 20px 0 0 0;
+        }
       }
     }
   }
-  display: none;
-  margin-top: 20px;
 }

@@ -2,7 +2,6 @@ import React from 'react';
 
 export default class Card extends React.Component {
 
-
  render(){
   /**
    * Populates list items according to data passed
@@ -11,8 +10,11 @@ export default class Card extends React.Component {
     var items = this.props.resultsArray;
     var itemslist = items.map(function(item, index){
           return(
-              <li key={ index } class="card">
-                <img src={ item.image } class="card-img" />
+              <li key={ index } class="card" >
+                <div class="card-header">
+                    <img src={ item.image } class="card-img" />
+                    <a href="javascript:" class="book-button">Book</a>
+                  </div>
                 <div>
                   <div class="card-info">
                     <p class="workplace-name">{ item.name }</p>
@@ -26,10 +28,11 @@ export default class Card extends React.Component {
               </li>
           );})
     return(
-      <ul class="card-list center">
-        { itemslist }
-       </ul> 
-        
+      <div class="results-container">
+        <ul class="card-list center">
+          { itemslist }
+         </ul>
+      </div>   
       );
 
   }
