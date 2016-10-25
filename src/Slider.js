@@ -79,10 +79,10 @@ export default class Slider extends React.Component {
       score: Math.round(row.location_rating * 10) / 10,
       hourPrice: row.hour_price
     }))
-    .filter(user => user.price != null &&
-      user.image != null &&
-      user.name != null &&
-      user.score != 0
+    .filter(item => item.price != null &&
+      item.image != null &&
+      item.name != null &&
+      item.score != 0
       );
 
 
@@ -96,7 +96,7 @@ export default class Slider extends React.Component {
         if (resultsArray.length > 0) {
           $(".results-container").show();
           $('html,body').animate({
-            scrollTop: $(".card-list").offset().top
+            scrollTop: $(".results-container").offset().top
           }, 'slow');
         } else {
           $(".alert-box, .cancel").animate( { "opacity": "show"} , 1250 );
