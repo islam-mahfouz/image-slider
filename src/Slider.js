@@ -77,8 +77,7 @@ export default class Slider extends React.Component {
       image: row.image_urls2[0],
       name:  row.name,
       score: Math.round(row.location_rating * 10) / 10,
-      hourPrice: row.hour_price,
-      reviewCount: row.review_count
+      hourPrice: row.hour_price
     }))
     .filter(user => user.price != null &&
       user.image != null &&
