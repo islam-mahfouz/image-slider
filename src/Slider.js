@@ -107,7 +107,7 @@ export default class Slider extends React.Component {
       );
   }
 
- 
+  
 
  render(){
 
@@ -123,8 +123,11 @@ export default class Slider extends React.Component {
           <div class="search-container">
             <img src="/img/cancel.png" class="cancel hide"/>
             <span class="alert-box hide">No offices available in this city, please try another one!</span>
-            <input onChange={ this.searchQuery.bind(this) } value={ this.state.search } type="text" name="search"  placeholder="City name..." class="search-bar" />
-            <button disabled={ !this.state.search } onClick={ this.showResult.bind(this) } class="search-button">Search</button>
+            <input onChange={ this.searchQuery.bind(this) } value={ this.state.search } type="text"
+             name="search"  placeholder="City name..." class="search-bar" />
+            <button disabled={ !this.state.search } onClick={ this.showResult.bind(this) } class="search-button">
+              Search
+            </button>
           </div>
       	</div>
         <Card resultsArray={ this.state.resultsArray }></Card>
